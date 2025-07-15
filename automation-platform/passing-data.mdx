@@ -1,16 +1,16 @@
 ---
-title: "Passing Data"
+title: "Paso de Datos"
 icon: "wand-sparkles"
-description: "Using data from previous steps in the current one"
+description: "Usar datos de pasos anteriores en el paso actual"
 ---
 
-## Data flow
+## Flujo de Datos
 
-Any flow is a vertical diagram that **starts with a trigger step** followed by **any number of action steps**.
+Cualquier flujo es un diagrama vertical que **comienza con un paso de activación** seguido de **cualquier cantidad de pasos de acción**.
 
-Steps are connected vertically. Data flows from parent steps to the children. Children steps have access to the output data of the parent steps.
+Los pasos están conectados verticalmente. Los datos fluyen de los pasos padre hacia los hijos. Los pasos hijos tienen acceso a los datos de salida de los pasos padre.
 
-## Example Steps
+## Ejemplo de Pasos
 
 <video
   width="450"
@@ -20,17 +20,17 @@ Steps are connected vertically. Data flows from parent steps to the children. Ch
   playsinline
   src="/resources/passing-data-3steps.mp4"></video>
 
-This flow has 3 steps, they can access data as follows:
+Este flujo tiene 3 pasos, y pueden acceder a los datos de la siguiente forma:
 
-- **Step 1** is the main data producer to be used in the next steps. Data produced by Step 1 will be accessible in Steps 2 and 3. Some triggers don't produce data though, like Schedules.
+- **Paso 1** es el principal productor de datos que se usarán en los siguientes pasos. Los datos producidos por el Paso 1 serán accesibles en los Pasos 2 y 3. Algunos activadores no producen datos, como los de tipo "Schedule".
 
-- **Step 2** can access data produced by Step 1. After execution, this step will also produce data to be used in the next step(s).
+- **Paso 2** puede acceder a los datos producidos por el Paso 1. Después de su ejecución, este paso también producirá datos que podrán ser utilizados por el/los siguiente(s) paso(s).
 
-- **Step 3** can access data produced by Steps 1 and 2 as they're its parent steps. This step can produce data but since it's the last step in the flow, it can't be used by other ones.
+- **Paso 3** puede acceder a los datos producidos por los Pasos 1 y 2, ya que son sus pasos padre. Este paso puede producir datos, pero como es el último en el flujo, estos datos no serán usados por otros pasos.
 
-## Data to Insert Panel
+## Panel de Inserción de Datos
 
-In order to use data from a previous step in your current step, place your cursor in any input, the **Data to Insert** panel will pop up.
+Para usar datos de un paso anterior en tu paso actual, coloca el cursor en cualquier campo de entrada. El panel **Datos para Insertar** aparecerá.
 
 <video
   autoPlay
@@ -39,11 +39,11 @@ In order to use data from a previous step in your current step, place your curso
   playsinline
   src="/resources/passing-data-data-to-insert-panel.mp4"></video>
 
-This panel shows the accessible steps and their data. You can expand the data items to view their content, and you can click the items to insert them in your current settings input.
+Este panel muestra los pasos accesibles y sus datos. Puedes expandir los elementos para ver su contenido y hacer clic para insertarlos en el campo actual.
 
-If an item in this panel has a caret (⌄) to the right, it means you can click on the item to expand its child properties. You can select the parent item or its properties as you need.
+Si un elemento tiene un caret (⌄) a la derecha, puedes hacer clic para expandir sus propiedades hijas. Puedes seleccionar el elemento padre o cualquiera de sus propiedades según lo necesites.
 
-When you insert data from this panel, it gets inserted at the cursor's position in the input. This means you can combine static text and dynamic data in any field.
+Cuando insertas un dato desde este panel, se agrega en la posición del cursor dentro del campo. Esto significa que puedes combinar texto estático y datos dinámicos en cualquier campo.
 
 <video
   autoPlay
@@ -52,30 +52,30 @@ When you insert data from this panel, it gets inserted at the cursor's position 
   playsinline
   src="/resources/passing-data-main-insert-data-example.mp4"></video>
 
-We generally recommend that you expand the items before inserting them to understand the type of data they contain and whether they're the right fit to the input you're filling.
+Recomendamos que expandas los elementos antes de insertarlos para entender el tipo de datos que contienen y confirmar si son adecuados para el campo que estás llenando.
 
-## Testing Steps to Generate Data
+## Probar los Pasos para Generar Datos
 
-We require you to test steps before accessing their data. This approach protects you from selecting the wrong data and breaking your flows after publishing them.
+Es necesario probar los pasos antes de acceder a sus datos. Este enfoque evita que selecciones datos incorrectos y que tus flujos fallen después de ser publicados.
 
-If a step is not tested and you try to access its data, you will see the following message:
+Si un paso no ha sido probado y tratas de acceder a sus datos, verás el siguiente mensaje:
 
 <img
   width="350"
   src="/resources/passing-data-test-step-first.png"
-  alt="Test your automation step first"
+  alt="Primero prueba tu paso de automatización"
 />
 
-To fix this, go to the step and use the Generate Sample Data panel to test it. Steps use different approaches for testing. These are the common ones:
+Para solucionarlo, ve al paso y usa el panel Generar Datos de Ejemplo para probarlo. Los pasos usan diferentes enfoques para esta prueba. Algunos comunes son:
 
-- **Load Data:** Some triggers will let you load data from your connected account without having to perform any action in that account.
-- **Test Trigger:** Some triggers will require you to head to your connected account and fire the trigger in order to generate sample data.
-- **Send Data:** Webhooks require you to send a sample request to the webhook URL to generate sample data.
-- **Test Action:** Action steps will let you run the action in order to generate sample data.
+- **Cargar Datos:** Algunos activadores permiten cargar datos desde tu cuenta conectada sin necesidad de realizar acciones manuales.
+- **Probar Activador:** Algunos requieren que vayas a tu cuenta conectada y actives el evento correspondiente.
+- **Enviar Datos:** Los webhooks requieren que envíes una solicitud de prueba al URL del webhook para generar datos.
+- **Probar Acción:** Los pasos de acción permiten ejecutar la acción para obtener datos de ejemplo.
 
-Follow the instructions in the Generate Sample Data panel to know how your step should be tested. Some triggers will also let you Use Mock Data, which will generate static sample data from the piece. We recommend that you test the step instead of using mock data.
+Sigue las instrucciones del panel para saber cómo probar tu paso. Algunos activadores también permiten usar Datos Simulados (Mock Data), pero se recomienda hacer una prueba real.
 
-This is an example for generating sample data for a trigger using the **Load Data** button:
+Este es un ejemplo de cómo generar datos de ejemplo con el botón **Cargar Datos**:
 
 <video
   autoPlay
@@ -84,11 +84,11 @@ This is an example for generating sample data for a trigger using the **Load Dat
   playsinline
   src="/resources/passing-data-load-data.mp4"></video>
 
-## Advanced Tips
+## Consejos Avanzados
 
-### Switching to Dynamic Values
+### Cambiar a Valores Dinámicos
 
-Dropdowns and some other input types don't let you select data from previous steps. If you'd like to bypass this and use data from previous steps instead, switch the input into a dynamic one using this button:
+Algunos desplegables y campos no permiten seleccionar datos de pasos anteriores. Si deseas usar esos datos, cambia el campo a dinámico con este botón:
 
 <video
   autoPlay
@@ -97,12 +97,12 @@ Dropdowns and some other input types don't let you select data from previous ste
   playsinline
   src="/resources/passing-data-dynamic-value.mp4"></video>
 
-### Accessing data by path
+### Acceder a datos por ruta
 
-If you can't find the data you're looking for in the **Data to Insert** panel but you'd like to use it, you can write a JSON path instead.
+Si no encuentras los datos en el panel **Datos para Insertar** pero sabes cómo se llaman, puedes escribir la ruta JSON directamente.
 
-Use the following syntax to write JSON paths:
+Usa esta sintaxis:
 
-`{{step_slug.path.to.property}}`
+`{{nombre_del_paso.ruta.al.dato}}`
 
-The `step_slug` can be found by moving your cursor over any of your flow steps, it will show to the right of the step.
+El `nombre_del_paso` se muestra al colocar el cursor sobre cualquier paso del flujo. Se mostrará a la derecha del paso.

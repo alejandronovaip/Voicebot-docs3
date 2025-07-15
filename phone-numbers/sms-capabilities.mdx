@@ -1,79 +1,78 @@
 ---
-title: "SMS Capabilities"
+title: "Capacidades de SMS"
 icon: "message-sms"
-description: "Learn about SMS features, requirements, and pricing for your phone numbers"
+description: "Conoce las funciones, requisitos y precios de los mensajes SMS para tus números telefónicos"
 ---
 
 <Card
-  title="Detailed SMS Documentation"
+  title="Documentación Detallada de SMS"
   icon="book-open"
   href="/automation-platform/calls-related/sms-capabilities">
-  This is an overview of SMS features. For detailed instructions on sending SMS
-  through automation flows, check our [Automation Platform
-  Documentation](/automation-platform/calls-related/sms-capabilities).
+  Este es un resumen de las capacidades de SMS. Para instrucciones detalladas sobre cómo enviar SMS a través de flujos de automatización, consulta nuestra [Documentación de la Plataforma de Automatización](/automation-platform/calls-related/sms-capabilities).
 </Card>
 
-## Requirements
+## Requisitos
 
-To send SMS messages, you need:
+Para enviar mensajes SMS, necesitas:
 
-- An SMS-capable phone number
-- Sufficient credits in your account
-- Proper automation flow setup
+- Un número compatible con SMS
+- Créditos suficientes en tu cuenta
+- Un flujo de automatización correctamente configurado
 
-## SMS Segments
+## Segmentos SMS
 
-SMS messages are split into segments:
+Los mensajes SMS se dividen en segmentos:
 
-- Each segment is 160 characters for standard ASCII text
-- Or 70 characters for Unicode (special characters, emojis)
-- Longer messages are automatically split into multiple segments
-- You are charged per segment sent
+- Cada segmento incluye hasta 160 caracteres en texto ASCII estándar
+- O 70 caracteres si usa Unicode (caracteres especiales, emojis)
+- Los mensajes largos se dividen automáticamente en múltiples segmentos
+- Se cobra por cada segmento enviado
 
-For example:
+Ejemplos:
 
-- "Hello! How are you?" (16 chars) = 1 segment
-- A message with 200 ASCII chars = 2 segments
-- A message with emojis and 100 chars = 2 segments
+- "¡Hola! ¿Cómo estás?" (16 caracteres) = 1 segmento
+- Un mensaje con 200 caracteres ASCII = 2 segmentos
+- Un mensaje con emojis y 100 caracteres = 2 segmentos
 
-## Costs
+## Costos
 
-SMS pricing varies by:
+El precio de los SMS varía según:
 
-- Destination country
-- Number of segments
-- Type of content (standard/unicode)
+- País de destino
+- Número de segmentos
+- Tipo de contenido (estándar o unicode)
 
-## Monitoring & History
+## Monitoreo e Historial
 
-Track your SMS activity in the dashboard:
+Puedes seguir tu actividad SMS desde el panel:
 
-- Delivery status
-- Timestamp
-- Number of segments
-- Cost per message
-- Recipient details
-- Content preview
+- Estado de entrega
+- Fecha y hora de envío
+- Número de segmentos
+- Costo por mensaje
+- Detalles del destinatario
+- Vista previa del contenido
 
-## Best Practices
+## Mejores Prácticas
 
-1. **Message Length**
+1. **Longitud del mensaje**
 
-   - Keep messages concise
-   - Monitor segment count
-   - Use standard characters when possible
+   - Mantén los mensajes cortos y directos
+   - Monitorea la cantidad de segmentos
+   - Usa caracteres estándar siempre que sea posible
 
-2. **Compliance**
+2. **Cumplimiento normativo**
 
-   - Include opt-out instructions
-   - Follow local regulations
-   - Respect quiet hours
+   - Incluye instrucciones de cancelación (opt-out)
+   - Sigue las regulaciones locales
+   - Respeta horarios de envío
 
-3. **Testing**
-   - Verify number capabilities
-   - Test delivery to different carriers
-   - Monitor delivery rates
+3. **Pruebas**
+
+   - Verifica que el número soporte SMS
+   - Prueba el envío a distintos operadores
+   - Monitorea las tasas de entrega
 
 ---
 
-**Want to start sending SMS?** Check out our [automation platform documentation](/automation-platform/calls-related/sms-capabilities) to learn how to set up SMS workflows.
+**¿Listo para enviar SMS?** Consulta nuestra [documentación de automatización](/automation-platform/calls-related/sms-capabilities) para aprender a configurar flujos de SMS.

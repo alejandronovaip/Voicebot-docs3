@@ -1,100 +1,99 @@
 ---
-title: "Introduction"
-description: "Learn How to Automate Your AI Call Workflows with Autocalls"
+title: "Introducción"
+description: "Aprende cómo automatizar flujos de llamadas con Dialvox AI"
 ---
 
-# Automation Platform
+# Plataforma de Automatización
 
-The Autocalls Automation Platform helps you create powerful AI call automation workflows without coding. Build flows that enhance your AI calling system by processing variables before calls, handling post-call actions, and creating seamless integrations with your existing tools.
+La Plataforma de Automatización de Dialvox AI te permite crear flujos de trabajo potentes sin necesidad de escribir código. Diseña procesos que mejoran tus llamadas automatizadas con IA mediante el uso de variables antes de la llamada, acciones posteriores, y conexiones con tus herramientas actuales.
 
 ![Flow Builder](/resources/visual-builder.gif)
 
-## Key Features
+## Funciones Clave
 
-### AI Call-Based Triggers
+### Disparadores Basados en Llamadas con IA
 
-1. **Call Ended Trigger**
+1. **Disparador al Finalizar la Llamada**
 
-   - Activates immediately when an AI call completes
-   - Access full conversation transcript and AI responses
-   - Use call duration, status, and detailed metadata
-   - Perfect for post-call automation like CRM updates
-   - Trigger follow-up actions based on call outcomes
+   - Se activa inmediatamente al terminar una llamada con IA
+   - Accede a la transcripción completa y respuestas del asistente
+   - Usa duración, estado y metadatos de la llamada
+   - Ideal para automatizar tareas post-llamada como actualizar CRM
+   - Activa acciones basadas en el resultado de la llamada
 
-2. **Inbound Call Variable Injection**
-   - Triggers before AI assistant picks up the call
-   - Enriches AI context with real-time customer data
-   - Customizes AI behavior based on caller information
-   - Returns variables that get injected into AI prompts
-   - Enables personalized conversation flows
+2. **Inyección de Variables en Llamadas Entrantes**
 
-### Essential Actions
+   - Se ejecuta antes de que el asistente conteste
+   - Enriquece el contexto con datos del cliente en tiempo real
+   - Personaliza el comportamiento del asistente según el número que llama
+   - Devuelve variables que se insertan en el prompt del asistente
+   - Permite flujos de conversación más personalizados
 
-1. **Hubspot Integration**
+### Acciones Esenciales
 
-   - Update contact records with call outcomes
-   - Create new contacts from inbound calls
-   - Sync conversation insights to CRM
-   - Track AI interaction history
-   - Automate lead qualification
+1. **Integración con Hubspot**
 
-2. **Campaign Management**
+   - Actualiza contactos con resultados de llamadas
+   - Crea nuevos registros a partir de llamadas entrantes
+   - Sincroniza insights de la conversación con tu CRM
+   - Registra el historial de interacciones con IA
+   - Automatiza la calificación de leads
 
-   - Add qualified leads to AI calling campaigns
-   - Schedule AI follow-up calls
-   - Manage call priorities based on outcomes
-   - Track conversion rates per campaign
-   - Automate campaign assignments
+2. **Gestión de Campañas**
 
-3. **External Systems**
-   - Send post-call summary emails
-   - Update spreadsheets with call data
-   - Trigger webhooks for custom integrations
-   - Connect with your business tools
-   - Automate multi-step workflows
+   - Agrega leads calificados a campañas de llamadas
+   - Programa seguimientos automáticos con IA
+   - Ajusta la prioridad de llamadas según resultados
+   - Mide tasas de conversión por campaña
+   - Automatiza asignaciones de campañas
 
-## How It Works
+3. **Conexión con Sistemas Externos**
 
-1. **Choose Your Call Trigger**
+   - Envía resúmenes de llamadas por email
+   - Actualiza hojas de cálculo con datos de llamadas
+   - Dispara webhooks personalizados
+   - Conecta con herramientas empresariales
+   - Automatiza flujos de múltiples pasos
 
-   - "Call Ended" for post-conversation automation
-   - "Inbound Call" for real-time AI context injection
+## Cómo Funciona
 
-2. **Configure Call Variables**
+1. **Elige el Disparador**
 
-   - Map AI conversation data and transcripts
-   - Access caller details and history
-   - Define AI routing logic
-   - Set up custom conversation variables
+   - “Llamada Finalizada” para automatización post-llamada
+   - “Llamada Entrante” para enriquecer contexto en tiempo real
 
-3. **Add Smart Actions**
-   - Update CRM with call outcomes
-   - Send automated notifications
-   - Schedule follow-up activities
-   - Return enriched context to AI
+2. **Configura Variables**
 
-## Example Use Cases
+   - Mapea datos de conversación y transcripciones
+   - Accede a detalles del contacto y su historial
+   - Define reglas de enrutamiento del asistente
+   - Establece variables personalizadas para el diálogo
 
-### Intelligent CRM Update
+3. **Agrega Acciones Inteligentes**
 
-```javascript
-Trigger: AI Call Ended
+   - Actualiza tu CRM con los resultados
+   - Envía notificaciones automáticas
+   - Agenda actividades de seguimiento
+   - Devuelve contexto enriquecido al asistente
+
+## Casos de Uso
+
+### Actualización Inteligente del CRM
+
+Disparador: Llamada Finalizada
 ↓
-Process Conversation Insights
+Procesar insights de conversación
 ↓
-Update Hubspot Contact
+Actualizar contacto en Hubspot
 ↓
-Schedule Next AI Interaction
-```
+Programar próxima interacción con IA
 
-### Smart Inbound Call Handling
+### Manejo Personalizado de Llamadas Entrantes
 
-```javascript
-Trigger: Inbound Call to AI
+Disparador: Llamada entrante al asistente
 ↓
-Lookup Customer in Hubspot
+Consultar cliente en Hubspot
 ↓
-Return Enriched Context
+Devolver contexto enriquecido
 ↓
-AI Assistant Personalizes Conversation
-```
+El asistente personaliza la conversación

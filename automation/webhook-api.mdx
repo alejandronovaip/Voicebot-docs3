@@ -1,31 +1,32 @@
 ---
-title: "Webhook & API"
+title: "Webhooks y API"
 icon: "code"
-description: "Learn how to use webhooks and the REST API for custom integrations and automation"
+description: "Aprende a usar webhooks y la API REST para integraciones personalizadas y automatización"
 ---
 
-If you want deeper customization beyond no-code blocks, Autocalls.ai supports **webhooks** and a **REST API**.
+Si necesitas personalización más allá de los bloques sin código, Dialvox AI ofrece soporte para **webhooks** y una **API REST**.
 
 ## 1. Webhooks
 
-- **When to Use**: Trigger events in external systems the moment something happens in Autocalls.ai (e.g., "Call Ended,").
-- **Configuration**: Set a webhook URL in your assistant/campaign settings or the automation platform.
-- **Payload**: Typically includes call ID, transcript, call outcome, or any user data collected.
+- **Cuándo Usarlos**: Dispara eventos en sistemas externos en cuanto algo sucede en Dialvox AI (por ejemplo, “Llamada Finalizada”).
+- **Configuración**: Define una URL de webhook en la configuración del asistente, campaña o dentro de la plataforma de automatización.
+- **Payload**: Generalmente incluye el ID de llamada, transcripción, resultado de la llamada y cualquier dato recogido del usuario.
 
-## 2. REST API
+## 2. API REST
 
-- **Key Functions**:
+- **Funciones Principales**:
 
-  1. **Create/Update Leads**
-  2. **Manage Campaigns**
+  1. **Crear/Actualizar Leads**
+  2. **Gestionar Campañas**
+  3. **Consultar llamadas y estadísticas**
 
-- **Auth & Rate Limits**: Usually uses API tokens. Check [API docs](/api-reference/introduction) for details on endpoints and usage quotas.
+- **Autenticación y Límites**: Utiliza tokens de API. Consulta la [documentación de API](/api-reference/introduction) para detalles sobre los endpoints y cuotas de uso.
 
-## 3. Example Use Cases
+## 3. Casos de Uso Comunes
 
-- **Real-Time CRM Sync**: For each new call, post data to your CRM's endpoint.
-- **Custom Dashboards**: Pull call data into your own analytics dashboard.
+- **Sincronización en Tiempo Real con CRM**: Enviar los datos de cada llamada directamente a tu CRM.
+- **Dashboards Personalizados**: Extraer información de llamadas para alimentar tus propios paneles de analítica.
 
 ---
 
-**Note:** You'll find the official API reference in a dedicated docs section or via your Autocalls.ai dashboard. Always secure your tokens and test endpoints in a dev environment.
+**Nota:** La documentación oficial de la API está disponible en una sección dedicada o desde tu panel de control de Dialvox AI. Asegúrate siempre de proteger tus tokens y realizar pruebas en un entorno de desarrollo.

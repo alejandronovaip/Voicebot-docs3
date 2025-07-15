@@ -16,7 +16,7 @@
     }
   },
   "topAnchor": {
-    "name": "Platform Guide",
+    "name": "Guia",
     "icon": "book"
   },
   "sidebar": {
@@ -34,7 +34,7 @@
     "url": "https://app.autocalls.ai"
   },
   "anchors": [{
-    "name": "No-Code Automation",
+    "name": "Automatización No-Code",
     "icon": "wand-magic-sparkles",
     "color": "#6c63ff",
     "url": "automation-platform"
@@ -58,14 +58,14 @@
       ]
     },
     {
-      "group": "Getting Started",
+      "group": "Primeros pasos",
       "pages": [
         "getting-started/core-concepts",
         "getting-started/understanding-billing"
       ]
     },
     {
-      "group": "AI Assistants Overview",
+      "group": "Resumen de Asistente IA",
       "pages": [
         "ai-assistants/what-is-ai-assistant",
         "ai-assistants/system-prompt",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "group": "Phone Numbers",
+      "group": "Numeros Telefonicos",
       "pages": [
         "phone-numbers/types",
         "phone-numbers/purchasing-and-managing",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "group": "Inbound Calls",
+      "group": "Llamadas Entrantes",
       "pages": [
         "inbound-calls/overview",
         "inbound-calls/provisioning",
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "group": "Outbound Calls",
+      "group": "Llamadas salientes",
       "pages": [
         "outbound-calls/overview",
         "outbound-calls/campaigns",
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "group": "AI Prompting & Conversation Design",
+      "group": "Diseño de Conversaciones y Prompts para IA",
       "pages": [
         "conversation-design/prompt-basics",
         "conversation-design/knowledge-bases",
@@ -118,7 +118,7 @@
       ]
     },
     {
-      "group": "Automation & Integrations",
+      "group": "Automatización e Integraciones",
       "pages": [
         "automation/overview",
         "automation/webhook-api",
@@ -126,48 +126,7 @@
       ]
     },
     {
-      "group": "Costs & Pricing",
-      "pages": [
-        "pricing/overview",
-        "pricing/usage-based",
-        "pricing/number-rentals"
-      ]
-    },
-    {
-      "group": "Number Provisioning",
-      "pages": [
-        "provisioning/supported-countries",
-        "provisioning/managing-numbers"
-      ]
-    },
-    {
-      "group": "White Label Program",
-      "pages": [
-        "white-label/overview",
-        "white-label/onboarding",
-        "white-label/plans-setup"
-      ]
-    },
-    {
-      "group": "Troubleshooting & FAQs",
-      "pages": [
-        "troubleshooting/voice-problems",
-        "troubleshooting/billing",
-        "troubleshooting/call-quality",
-        "troubleshooting/ai-behavior"
-      ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        "api-reference/introduction",
-        "api-reference/authentication",
-        "api-reference/leads/create",
-        "api-reference/campaigns/index"
-      ]
-    },
-    {
-      "group": "No-Code Automation platform",
+      "group": "Plataforma de Automatización No-Code",
       "pages": [
         "automation-platform/introduction",
         "automation-platform/building-flows",
@@ -185,21 +144,10 @@
         "automation-platform/calls-related/common-integrations",
         "automation-platform/calls-related/sms-capabilities"
       ]
-    },
-    {
-      "group": "Tutorials",
-      "pages": [
-        "automation-platform/tutorials/outbound-form-call",
-        "automation-platform/tutorials/inbound-context-injection"
-
-      ]
     }
   ],
-  "footerSocials": {
-    "linkedin": "https://www.linkedin.com/company/autocalls-ai"
-  },
   "api": {
-    "baseUrl": "https://app.autocalls.ai/api/",
+    "baseUrl": "https://calls.dialvox.io/api/",
     "auth": {
       "method": "bearer"
     }
