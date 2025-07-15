@@ -24,14 +24,11 @@
   },
   "topbarLinks": [{
     "name": "Home",
-    "url": "https://autocalls.ai"
-  }, {
-    "name": "Support",
-    "url": "https://autocalls.ai/contact"
+    "url": "https://calls.dialvox.io"
   }],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://app.autocalls.ai"
+    "url": "https://calls.dialvox.io"
   },
   "anchors": [{
     "name": "Automatización No-Code",
