@@ -133,6 +133,15 @@
       ]
     },
     {
+      "group": "Documentación API",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/leads/create",
+        "api-reference/campaigns/index"
+      ]
+    },
+    {
       "group": "Calls Related",
       "pages": [
         "automation-platform/calls-related/autocalls-tool",
