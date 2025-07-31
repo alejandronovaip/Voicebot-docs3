@@ -1,0 +1,58 @@
+---
+title: "Realizar llamada"
+api: "POST /user/make_call"
+description: "Realizar llamada telefonica"
+---
+
+Este endpoint permite realizar una llamada telefonica.
+
+### Request body
+
+<ParamField body="phone_number" type="string" required>
+  El numero de telefono en formato E.164
+</ParamField>
+
+<ParamField body="assistant_id" type="integer" required>
+  El ID del asistente desde el cual se realizara la llamada 
+</ParamField>
+
+<ParamField body="variables" type="array">
+  The variables to pass to the lead
+</ParamField>
+
+### Response fields
+
+<ResponseField name="message" type="string">
+  The message of the response
+</ResponseField>
+
+<ResponseField name="data" type="object">
+  The data of the response
+</ResponseField>
+
+
+<RequestExample>
+
+```json Request
+{
+  "phone_number": "<string>",
+  "assistant_id": 123,
+  "variables": {
+    "customer_name": "<string>",
+    "email": "<string>"
+  }
+}
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json 200 Response
+{
+  "message": "Call initiated successfully",
+  "data": {}
+}
+```
+
+</ResponseExample>

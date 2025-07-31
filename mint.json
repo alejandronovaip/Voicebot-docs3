@@ -41,7 +41,7 @@
     "color": "#ff0142",
     "url": "white-label"
   }, {
-    "name": "API Reference",
+    "name": "Documentacion API",
     "icon": "code",
     "color": "#1c51fc",
     "url": "api-reference"
@@ -138,7 +138,8 @@
         "api-reference/introduction",
         "api-reference/authentication",
         "api-reference/leads/create",
-        "api-reference/campaigns/index"
+        "api-reference/campaigns/index",
+        "api-reference/make-call"
       ]
     },
     {

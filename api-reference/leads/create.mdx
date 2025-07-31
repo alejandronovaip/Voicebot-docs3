@@ -1,42 +1,41 @@
 ---
-title: "Create lead"
+title: "Crear lead"
 api: "POST /user/lead"
-icon: "user-plus"
-description: "Create a new lead in the Autocalls system"
+description: "Crear un nuevo lead en el sistema Autocalls"
 ---
 
-This endpoint allows you to create a new lead in the Autocalls system.
+Este endpoint permite crear un nuevo lead en el sistema Autocalls.
 
-### Request body
+### Cuerpo de la solicitud
 
 <ParamField body="phone_number" type="string" required>
-  The phone number of the lead in E.164 format (e.g. +1234567890)
+  El número de teléfono del lead en formato E.164 (por ejemplo, +1234567890)
 </ParamField>
 
 <ParamField body="campaign_id" type="integer" required>
-  The ID of the campaign to create the lead for
+  El ID de la campaña para la cual se crea el lead
 </ParamField>
 
 <ParamField body="variables" type="array">
-  The variables to pass to the lead
+  Las variables que se pasarán al lead
 </ParamField>
 
 <ParamField body="allow_dupplicate" type="boolean">
-  Whether to allow duplicate leads in a campaign.
+  Indica si se permiten leads duplicados en una campaña
 </ParamField>
 
-### Response fields
+### Campos de respuesta
 
 <ResponseField name="message" type="string">
-  The message of the response
+  El mensaje de la respuesta
 </ResponseField>
 
 <ResponseField name="data" type="object">
-  The data of the response
+  Los datos de la respuesta
 </ResponseField>
 
 <ResponseField name="data.id" type="string">
-  The id of the lead
+  El ID del lead
 </ResponseField>
 
 <RequestExample>
@@ -53,19 +52,3 @@ This endpoint allows you to create a new lead in the Autocalls system.
   ],
   "allow_dupplicate": false
 }
-```
-
-</RequestExample>
-
-<ResponseExample>
-
-```json 200 Response
-{
-  "message": "Lead created successfully",
-  "data": {
-    "id": "1234569"
-  }
-}
-```
-
-</ResponseExample>

@@ -1,42 +1,41 @@
 ---
-title: "Authentication"
+title: "Autenticación"
 icon: "key"
-description: "Learn how to authenticate your API requests"
+description: "Aprende cómo autenticar tus solicitudes a la API"
 ---
 
-The Autocalls API uses API keys to authenticate requests. You need to include your API key in the header of each request you make to the API.
+La API de Autocalls utiliza claves API para autenticar las solicitudes. Debes incluir tu clave API en el encabezado de cada solicitud que hagas a la API.
 
-## Obtaining an API Key
+## Obtener una clave API
 
-To obtain an API key:
+Para obtener una clave API:
 
-1. Log in to your Autocalls account at [https://call.dialvox.io](https://call.dialvox.io)
-2. Navigate to the "API Keys" page
-3. Click on the "Create new API Key" button
-4. Copy your new API key and store it securely
+1. Inicia sesión en tu cuenta de Dialvox calls en [https://calls.dialvox.io](https://calls.dialvox.io)  
+2. Navega a la página "Claves API"  
+3. Haz clic en el botón "Crear nueva clave API"  
+4. Copia tu nueva clave API y guárdala de forma segura  
 
 <Warning>
-  Keep your API key confidential and secure. Do not share it publicly or commit
-  it to version control systems.
+  Mantén tu clave API confidencial y segura. No la compartas públicamente ni la incluyas en sistemas de control de versiones.
 </Warning>
 
-## Using the API Key
+## Usar la clave API
 
-Include your API key in the `Authorization` header of each request:
+Incluye tu clave API en el encabezado `Authorization` de cada solicitud:
 
 ```
 Authorization: Bearer YOUR_API_KEY
 ```
 
-Replace `YOUR_API_KEY` with your actual API key.
+Reemplaza `YOUR_API_KEY` con tu clave API real.
 
-## Example Request
+## Ejemplo de solicitud
 
-Here's an example of how to include the API key in a cURL request:
+Aquí tienes un ejemplo de cómo incluir la clave API en una solicitud cURL:
 
 ```bash
 curl -X GET "https://call.dialvox.io/api/user/campaigns" \
-     -H "Authorization: Bearer YOUR_API_KEY"
+     -H "Authorization: Bearer TU_CLAVE_API"
 ```
 
-Replace `YOUR_API_KEY` with your actual API key when making requests.
+Reemplaza YOUR_API_KEY con tu clave API real al realizar solicitudes.
