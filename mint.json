@@ -49,7 +49,7 @@
   "navigation": [{
       "group": "Introduction",
       "pages": [
-        "introduction/what-is-autocalls",
+        "introduction/what-is-dialvoxai",
         "introduction/how-it-works",
         "introduction/key-terminology"
       ]
